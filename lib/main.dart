@@ -1,8 +1,12 @@
+import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart;
-
-void main(){
-  class app = MaterialApp(
+void main() {
+  var app = MaterialApp(
+    home: Scaffold(
+      appBar : AppBar(),
+    ),
 
   );
+  runApp(app);
+  
 }
