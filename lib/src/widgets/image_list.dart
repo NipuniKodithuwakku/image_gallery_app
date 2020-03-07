@@ -9,9 +9,15 @@ class ImageList extends StatelessWidget {
     return ListView.builder(
       itemCount: images.length,
       itemBuilder: (context, int index) {
-        return Image.network(images[index].url);
+        return Container(
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.grey),
+          ),
+          margin: EdgeInsets.all(20.0),
+          padding: EdgeInsets.all(20.0),
+          child: Image.network(images[index].url),
+        );
       },
-      
     );
   }
 }
